@@ -1,6 +1,7 @@
 package group.project.os.tictactoe;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -53,11 +54,13 @@ public class Game extends Activity implements OnClickListener {
         if (v.getId() == R.id.btn1) {
             if (chance) {
                 b1.setText("X");
+                b1.setTextColor(Color.parseColor("#ff0000"));
                 b1.setEnabled(false);
                 A[0] = 1;
                 chance = false;
             } else {
                 b1.setText("0");
+                b1.setTextColor(Color.parseColor("#32cd32"));
                 chance = true;
                 A[0] = 0;
                 b1.setEnabled(false);
@@ -66,11 +69,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn2) {
             if (chance) {
                 b2.setText("X");
+                b2.setTextColor(Color.parseColor("#ff0000"));
                 b2.setEnabled(false);
                 A[1] = 1;
                 chance = false;
             } else {
                 b2.setText("0");
+                b2.setTextColor(Color.parseColor("#32cd32"));
                 b2.setEnabled(false);
                 A[1] = 0;
                 chance = true;
@@ -79,11 +84,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn3) {
             if (chance) {
                 b3.setText("X");
+                b3.setTextColor(Color.parseColor("#ff0000"));
                 b3.setEnabled(false);
                 A[2] = 1;
                 chance = false;
             } else {
                 b3.setText("0");
+                b3.setTextColor(Color.parseColor("#32cd32"));
                 b3.setEnabled(false);
                 A[2] = 0;
                 chance = true;
@@ -92,11 +99,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn4) {
             if (chance) {
                 b4.setText("X");
+                b4.setTextColor(Color.parseColor("#ff0000"));
                 b4.setEnabled(false);
                 A[3] = 1;
                 chance = false;
             } else {
                 b4.setText("0");
+                b4.setTextColor(Color.parseColor("#32cd32"));
                 b4.setEnabled(false);
                 A[3] = 0;
                 chance = true;
@@ -104,11 +113,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn5) {
             if (chance) {
                 b5.setText("X");
+                b5.setTextColor(Color.parseColor("#ff0000"));
                 b5.setEnabled(false);
                 A[4] = 1;
                 chance = false;
             } else {
                 b5.setText("0");
+                b5.setTextColor(Color.parseColor("#32cd32"));
                 b5.setEnabled(false);
                 A[4] = 0;
                 chance = true;
@@ -116,11 +127,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn6) {
             if (chance) {
                 b6.setText("X");
+                b6.setTextColor(Color.parseColor("#ff0000"));
                 b6.setEnabled(false);
                 A[5] = 1;
                 chance = false;
             } else {
                 b6.setText("0");
+                b6.setTextColor(Color.parseColor("#32cd32"));
                 b6.setEnabled(false);
                 A[5] = 0;
                 chance = true;
@@ -128,11 +141,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn7) {
             if (chance) {
                 b7.setText("X");
+                b7.setTextColor(Color.parseColor("#ff0000"));
                 b7.setEnabled(false);
                 A[6] = 1;
                 chance = false;
             } else {
                 b7.setText("0");
+                b7.setTextColor(Color.parseColor("#32cd32"));
                 b7.setEnabled(false);
                 A[6] = 0;
                 chance = true;
@@ -140,11 +155,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn8) {
             if (chance) {
                 b8.setText("X");
+                b8.setTextColor(Color.parseColor("#ff0000"));
                 b8.setEnabled(false);
                 A[7] = 1;
                 chance = false;
             } else {
                 b8.setText("0");
+                b8.setTextColor(Color.parseColor("#32cd32"));
                 b8.setEnabled(false);
                 A[7] = 0;
                 chance = true;
@@ -152,11 +169,13 @@ public class Game extends Activity implements OnClickListener {
         } else if (v.getId() == R.id.btn9) {
             if (chance) {
                 b9.setText("X");
+                b9.setTextColor(Color.parseColor("#ff0000"));
                 b9.setEnabled(false);
                 A[8] = 1;
                 chance = false;
             } else {
                 b9.setText("0");
+                b9.setTextColor(Color.parseColor("#32cd32"));
                 b9.setEnabled(false);
                 A[8] = 0;
                 chance = true;
