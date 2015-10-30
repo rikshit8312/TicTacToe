@@ -191,6 +191,7 @@ public class Game extends Activity implements OnClickListener {
                 win = check();
                 if(win){
                     Toast.makeText(Game.this,"Player 1 wins",Toast.LENGTH_LONG).show();
+                    block();
                 }
             } else {
                 b6.setText("0");
@@ -274,23 +275,62 @@ public class Game extends Activity implements OnClickListener {
 
     }
 
+    private void block() {
+
+    }
 
 
     public boolean check() {
 
         for (int i = 0; i < 3; i++) {
             if(A[i][0]==A[i][1] && A[i][1]==A[i][2] && A[i][0]!=-1){
+                if(i==0){
+                    b1.setTextColor(Color.parseColor("#007bff"));
+                    b2.setTextColor(Color.parseColor("#007bff"));
+                    b3.setTextColor(Color.parseColor("#007bff"));
+                }
+                else if(i==1){
+                    b4.setTextColor(Color.parseColor("#007bff"));
+                    b5.setTextColor(Color.parseColor("#007bff"));
+                    b6.setTextColor(Color.parseColor("#007bff"));
+                }
+                else if(i==2){
+                    b7.setTextColor(Color.parseColor("#007bff"));
+                    b8.setTextColor(Color.parseColor("#007bff"));
+                    b9.setTextColor(Color.parseColor("#007bff"));
+                }
                 return true;
             }
             if(A[0][i]==A[1][i] && A[1][i]==A[2][i] && A[0][i]!=-1){
+                if(i==0){
+                    b1.setTextColor(Color.parseColor("#007bff"));
+                    b4.setTextColor(Color.parseColor("#007bff"));
+                    b7.setTextColor(Color.parseColor("#007bff"));
+                }
+                else if(i==1){
+                    b2.setTextColor(Color.parseColor("#007bff"));
+                    b5.setTextColor(Color.parseColor("#007bff"));
+                    b8.setTextColor(Color.parseColor("#007bff"));
+                }
+                else if(i==2){
+                    b3.setTextColor(Color.parseColor("#007bff"));
+                    b6.setTextColor(Color.parseColor("#007bff"));
+                    b9.setTextColor(Color.parseColor("#007bff"));
+                }
                 return true;
             }
         }
 
             if(A[0][0]==A[1][1] && A[1][1]==A[2][2] && A[0][0]!=-1){
+                b1.setTextColor(Color.parseColor("#007bff"));
+                b5.setTextColor(Color.parseColor("#007bff"));
+                b9.setTextColor(Color.parseColor("#007bff"));
                 return true;
             }
             if(A[2][0]==A[1][1] && A[1][1]==A[0][2] && A[2][0]!=-1){
+                b3.setTextColor(Color.parseColor("#007bff"));
+                b5.setTextColor(Color.parseColor("#007bff"));
+                b7.setTextColor(Color.parseColor("#007bff"));
                 return true;
 
             }
